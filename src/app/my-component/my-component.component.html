@@ -1,0 +1,25 @@
+
+  my-component works!<br>
+  <form (submit)="createList()">
+    Nom : <input type="text" name="nom" [(ngModel)]="nom"/>
+  </form>
+  
+  <br>
+  <br>
+  <p>
+    La liste des noms est :
+    <br>
+  </p>
+  
+      <ul *ngFor='let n of listeNom; let i=index'>
+        <li>
+          {{n}}
+        </li>
+      </ul>
+  
+<!--  
+    <b>Image:</b>
+  <br>
+  <img [src]="favicon"> -->
+
+
